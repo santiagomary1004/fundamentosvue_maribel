@@ -4,4 +4,3 @@
     <h6>Las mejores pizzas, recién hechas para ti</h6>
 </header>
 </template>
-
