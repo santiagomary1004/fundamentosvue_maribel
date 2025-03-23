@@ -1,18 +1,26 @@
+<script>
+import logo from '../assets/logo.png'
+export default {
+  data() {
+    return {
+      logo 
+    }
+  }
+}
+</script>
 <template>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <div class="row w-100 align-items-center">
-                
                 <!-- Logo -->
                 <div class="col-md-1">
                     <div class="card-body">
                         <div align="left">
-                            <img src: class="img-fluid" alt="Logo el rincon de las pizzas">
+                            <img :src="logo" class="img-fluid" alt="Logo el rincon de las pizzas">
                         </div>
                     </div>
                 </div>
                 <!-- Fin del Logo -->
-
                 <!-- Botón Ordena -->
                 <div class="col-auto p-1 m-0">
                     <div class="dropdown">
@@ -27,7 +35,6 @@
                     </div>
                 </div>
                 <!-- Fin del Botón Ordena -->
-
                 <!-- Botón Menú -->
                 <div class="col-auto p-1 m-0">
                     <div class="dropdown">

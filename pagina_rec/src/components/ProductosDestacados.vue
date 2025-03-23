@@ -1,3 +1,17 @@
+<script>
+import combopizz from '../assets/combopizz.jpg'
+import buns from '../assets/buns.jpg'
+import chorizo from '../assets/chorizo.jpg'
+import carnef from '../assets/carnef.jpg'
+const productos = {buns, chorizo, carnef, combopizz};
+export default {
+  data() {
+    return {
+        buns, chorizo, carnef, combopizz
+    }
+  }
+}
+</script>
 <template>
     <div class="container-sm">
         <br>
@@ -8,7 +22,7 @@
                 <div class="card mt-4">
                     <div class="card-header"><center>Bombas Pepperoni</center></div>
                     <div class="card-body">
-                        <img src="./imagenes/bouns.jpg" alt="Bombs" class="img-fluid" style="width: 280px; height: 280px;">
+                        <img :src="buns" alt="Bombs" class="img-fluid" style="width: 280px; height: 280px;">
                         <p>Precio: $59 la orden.</p>
                     </div>
                 </div>
@@ -17,7 +31,7 @@
                 <div class="card mt-4">
                     <div class="card-header"><center>Pizza Pepperoni con hierbas</center></div>
                     <div class="card-body">
-                        <img src="./imagenes/pizaa_chorizo.jpg" alt="Pizza de peperoni con hierbas" class="img-fluid" style="width: 280px; height: 280px;">
+                        <img :src="chorizo" alt="Pizza de peperoni con hierbas" class="img-fluid" style="width: 280px; height: 280px;">
                         <p>Precio: $99 la pizza pequeña.</p>
                     </div>
                 </div>
@@ -26,7 +40,7 @@
                 <div class="card mt-4">
                     <div class="card-header"><center>Pizza Barbacoa</center></div>
                     <div class="card-body">
-                        <img src="./imagenes/carne-fria.jpg" alt="Pizza con barcaboa" class="img-fluid" style="width: 280px; height: 280px;">
+                        <img :src="carnef" alt="Pizza con barcaboa" class="img-fluid" style="width: 280px; height: 280px;">
                         <p>Precio: $89 la pizza pequeña.</p>
                     </div>
                 </div>
@@ -35,7 +49,7 @@
                 <div class="card mt-4">
                     <div class="card-header"><center>Combo del día</center></div>
                     <div class="card-body">
-                        <img src="./imagenes/combos-pizza.jpg" alt="Pizzas en oferta" class="img-fluid" style="width: 280px; height: 280px;">
+                        <img :src="combopizz" alt="Pizzas en oferta" class="img-fluid" style="width: 280px; height: 280px;">
                         <p>Precio: $169, incluye 2 pizzas pequeñas y dos refrescos de 355ml.</p>
                     </div>
                 </div>

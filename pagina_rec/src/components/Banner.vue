@@ -1,17 +1,31 @@
+<script>
+import ban1 from '../assets/ban1.png'
+import ban2 from '../assets/ban2.png'
+import ban3 from '../assets/ban3.png'
+import ban4 from '../assets/ban4.png'
+const productos = {ban1, ban2, ban3, ban4};
+export default {
+  data() {
+    return {
+        ban1, ban2, ban3, ban4
+    }
+  }
+}
+</script>
 <template>
      <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./imagenes/Banner1.png" class="d-block w-100" alt="Pizza artesanal">
+                <img :src="ban1" class="d-block w-100" alt="Pizza artesanal">
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/Banner4.png" class="d-block w-100" alt="Pizza doble queso">
+                <img :src="ban4" class="d-block w-100" alt="Pizza doble queso">
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/Banner3.png" class="d-block w-100" alt="Pizza con hierbas">
+                <img :src="ban3" class="d-block w-100" alt="Pizza con hierbas">
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/Banner2.png" class="d-block w-100" alt="Pizza de peperoni">
+                <img :src="ban2" class="d-block w-100" alt="Pizza de peperoni">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
