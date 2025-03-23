@@ -105,10 +105,10 @@ export default {
 
   <!-- Modal con el formulario de inicio de sesión -->
   <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="formularioModalLabel">Iniciar sesión</h5>
+          <!-- <h5 class="modal-title" id="formularioModalLabel">Iniciar sesión</h5> -->
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -117,4 +117,19 @@ export default {
       </div>
     </div>
   </div>
+
+
+  <!-- <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center"> 
+        <Formulario />
+      </div>
+    </div>
+  </div>
+</div> -->
+
 </template>

@@ -31,7 +31,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 body {
     font-family: Cambria, serif;
     background-color: #f4f4f4;
@@ -47,8 +47,15 @@ body {
     padding: 70px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    /*max-width: 100%;   Se adapta al contenedor del modal */
+    width: 500px;       
+    margin: auto;       /*Centrar dentro del modal */
 }
+/*.modal-content {
+    /*max-width: 400px;   Ajustar al tamaño del formulario */
+   /* margin: auto;      /* Centrar el modal */
+/*}*/
+
 .form-container h2 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -83,5 +90,4 @@ body {
     background-color: #AD2E05;
 }
 
-  
 </style>
