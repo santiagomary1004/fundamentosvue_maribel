@@ -1,8 +1,8 @@
 <script>
-import ban1 from '../assets/ban1.png'
-import ban2 from '../assets/ban2.png'
-import ban3 from '../assets/ban3.png'
-import ban4 from '../assets/ban4.png'
+import ban1 from '../assets/ban1.png';
+import ban2 from '../assets/ban2.png';
+import ban3 from '../assets/ban3.png';
+import ban4 from '../assets/ban4.png';
 const productos = {ban1, ban2, ban3, ban4};
 export default {
   data() {
